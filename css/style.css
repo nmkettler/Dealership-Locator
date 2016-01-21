@@ -1,0 +1,362 @@
+*{
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+body {
+  padding-top: 0px;
+}
+
+li{
+  list-style-type: none;
+}
+
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+
+  }
+
+}
+#homeimg{
+	margin-bottom: 30px;
+
+}
+
+/*----------------Navbar-------------------------------------------------------------------------*/
+
+@media (min-width: 979px) {
+  .navbar-inverse{
+  border-bottom: none;
+   -webkit-box-shadow: 0 1.5px 10px black;
+  -moz-box-shadow: 0 1.5px 10px black;
+  box-shadow: 0 1.5px 10px black;
+}
+  .navbar-nav >li {
+	margin-top:50px;
+	}
+	/*Navbar box color on hover*/
+	.navbar-nav li:hover{
+	background-color: rgba(0,0,0,0.6);
+
+	}
+
+	.dropdown:hover .dropdown-menu { /*Menus automatically open*/
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+
+/* Navbar main background----------------------------------------------------------------------- */
+
+.navbar.navbar-inverse {
+    background-color: rgba(0,0,0,0.7);
+
+	}
+
+}
+     @media only screen and (max-width : 768px) {
+        .navbar-inverse { 
+            background-color: #191919; 
+            margin-bottom: 100px;
+        }
+     }
+/*Navbar link colors-----------------------------------------------------------------------*/
+
+.navbar-inverse .navbar-nav li a {
+	color:white;
+	font-size: 15px;
+}
+
+.navbar-inverse .navbar-nav li a:hover{
+	transition: color 0.5s ease;
+	color:#008000;
+}
+
+.navbar-inverse .navbar-nav ul li a {
+	color:black;
+}
+
+/*navbar scroll size-----------------------------------------------------------------------*/
+
+@media (min-width: 979px) {
+	#logo {
+  padding-top: 0px !important;
+  padding-bottom: 5px !important;
+}
+
+nav .navbar-toggle {
+  margin: 13px 15px 13px 0;
+}
+
+
+nav.navbar.shrink {
+  min-height: 35px;
+}
+
+
+nav.shrink li a{
+  padding-top: 25px !important;
+  padding-bottom: 10px !important;
+  font-size: 15px;
+}
+
+
+nav.shrink #logo{
+  font-size: 25px;
+  width:50%;
+  height:50%;
+  -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+}
+
+nav.shrink .navbar-nav >li{
+	margin-top: 0px;
+	-webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+}
+
+nav.shrink .navbar-toggle {
+  padding: 4px 5px;
+  margin: 8px 15px 8px 0;
+	}
+}
+#hiddenMobile i{
+  color:rgba(96,96,96,96);
+  padding-top: 50px;
+}
+#phoneTitle{
+  padding-top: 100px;
+}
+#Mobilelogo{
+  margin-top: 50px;
+}
+/*----------end of nav shrink/nav bar*/
+
+#foot {
+	background-color: rgba(96,96,96,96);
+}
+
+#foot p{
+	color: white;
+}
+#foot a{
+	color: black;
+}
+
+.footer {
+  position: relative;  
+  clear:both;
+  width: 100%;
+} 
+#foot{
+	/*margin-top: 5%;*/
+}
+.footer-above{
+	padding: .5%;
+}
+.footer-below{
+	background-color: #545454;
+}
+.footer-below p{
+	padding: 1%;
+	color: #d3d3d3;
+}
+#footNavText{
+	padding-top: 1%;
+}
+#footSocMedia{
+	padding-bottom:.05%;
+	padding-top: .05%;
+	color:white;
+}
+#descText a{
+	color:white;
+}
+
+#descText h3{
+	color:white;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+    border-radius: 5px;
+}
+
+#homeimg{
+  transition-duration: 4s;
+}
+
+.img-responsive { 
+    /* other definitions */
+    width:100%;
+}
+
+
+
+
+
+
+
+/*Map & Direction Page---------------------------------------------------------------*/
+#map-container { 
+  height: 500px 
+}
+#directions{
+  margin-bottom: 3%;
+}
+
+
+#homebtn{
+  font-size: 20px;
+}
+
+
+#map-canvas {
+    height: 500px;
+}
+
+
+.aboveMap{
+  margin-top: 50px;
+}
+
+.dropdownSelect{
+    border: 0 !important;  /*Removes border*/
+      -moz-appearance: none; /* Removes Default Firefox style*/
+      background-position: 82px 7px;  /*Position of the background-image*/
+      width: 180px; /*Width of select dropdown to give space for arrow image*/
+      text-indent: 0.01px; /* Removes default arrow from firefox*/
+      text-overflow: "";  /*Removes default arrow from firefox*/
+      font-size: 18px;
+      /*My custom style for fonts*/
+
+      color: #1455a2;
+
+}
+
+/*----- Sign In Form--------------------------*/
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  margin-top: 20px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#regist{
+  margin-left: 80px;
+}
+
+.form_plat{
+  padding: 50px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  border:1px solid black;
+  border-radius: 5px;
+  background-color: #82c600;
+}
+/*----------------------Cover Page--------------*/
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+.coverpage{
+    height: 100%;
+    background: url('https://1quest2thenext.files.wordpress.com/2013/07/the-road-4.jpg') no-repeat center center fixed; ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
