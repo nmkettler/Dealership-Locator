@@ -28,8 +28,8 @@
       <div class="site-wrapper-inner">
 
         <div class="cover-container">
-
-        <form action="checklogin.php" class="form-signin form_plat" method="POST">
+        	<img src="photos/CDKLogo.png" class="center-block cdkimg" width="315" height="177"/>
+        <form action="checklogin.php" class="form-signin form_plat" method="POST">      	
         <h2 class="form-signin-heading">Please Sign In</h2>
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="text" name="username" id="inputEmail" class="form-control" placeholder="Username" required autofocus>

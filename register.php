@@ -22,9 +22,10 @@
   </head>
 
   <body class="coverpage">
-
+            <img src="photos/CDKLogo.png" class="center-block cdkimg" width="315" height="177"/>
+    
     <div class="container">
-    	<form action="register.php" class="form-signin form_plat" method="POST">
+    	<form action="register.php" class="form-signin form_plat" method="POST">            
         <h2 class="form-signin-heading">Registration Page</h2>
         <a href="index.php">Click here to go back</a><br/><br/>
         <label for="inputEmail" class="sr-only">Email address</label>

@@ -63,7 +63,7 @@ $(document).ready(function(){
           if (scroll_start > offset.top) {
             $(".navbar-inverse").css('background-color', '#82c600');
           } else {
-            $('.navbar-inverse').css('background-color', 'rgba(0,0,0,0.7)');
+            $('.navbar-inverse').css('background-color', 'rgba(190,190,190,0.7)');
           }
         });
       }

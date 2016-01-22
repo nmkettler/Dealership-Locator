@@ -8,7 +8,7 @@
   <h4 class="text-center">Select from the dropdown menu below to see where your specific dealers are</h4><br><br>
   <div class="row">
     <div class="col-md-12">
-      <select id="type" class="center-block dropdownSelect" onchange="filterMarkers(this.value);">
+      <select id="type" class="center-block dropdownSelect" onchange="filterMarkers(this.value); printv(this.value);">
         <option value="">Select a Brand</option>
         <option value="first">Chevrolet</option>
         <option value="second">Cadillac</option>
@@ -25,15 +25,19 @@
     </div>
   </div><br><br>
 </div>
+<div class="container">
+    
+    <textarea rows="4" cols="50" type="text" name="user" id="mytext">
+    </textarea>
+    <input type="button" value="printv" onclick="printv()" />
 
+</div>
 <script>
-
 var gmarkers1 = [];
 var markers1 = [];
 var infowindow = new google.maps.InfoWindow({
     content: ''
 });
-
 markers1 = [
 ['0', 'McCarthy Coon Rapids', 45.204795, -93.351251, 'fourth'],
 ['1', 'Rydell', 47.895084, -97.046834, 'ninth'],
@@ -69,6 +73,17 @@ markers1 = [
 ['31', 'Tate Branch GMC',   31.6969279, -106.2786516, 'third']
 ];
 
+function printv(){
+for (i = 0; i < markers1.length; i++) {
+        var mar = markers1[i];
+    for(var j=0;j<mar.length; j++ ){
+        console.log(markers1[i][j]);
+
+    }
+        
+    }
+}
+
 function initialize() {
     var center = new google.maps.LatLng(37.3331615, -79.9769357);
     var mapOptions = {
@@ -76,50 +91,43 @@ function initialize() {
         zoom: 4,
         mapTypeId: google.maps.MapTypeId.TERRAIN
     };
-
    map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
     for (i = 0; i < markers1.length; i++) {
         addMarker(markers1[i]);
     }
 }
-
 function addMarker(marker) {
     var category = marker[4];
     var title = marker[1];
     var pos = new google.maps.LatLng(marker[2], marker[3]);
     var content = marker[1];
-
     marker1 = new google.maps.Marker({
         title: title,
         position: pos,
         category: category,
         map: map
     });
-
     gmarkers1.push(marker1);
-
     // Marker click listener
     google.maps.event.addListener(marker1, 'click', (function (marker1, content) {
         return function () {
             console.log('Gmarker 1 gets pushed');
-            infowindow.setContent(content);
+            infowindow.setContent(content);            
             infowindow.open(map, marker1);
             map.panTo(this.getPosition());
             map.setZoom(15);
         }
     })(marker1, content));
 }
-
 /**
  * Function to filter markers by category
  */
-
 filterMarkers = function (category) {
     for (i = 0; i < markers1.length; i++) {
-        marker = gmarkers1[i];
+        marker = gmarkers1[i];      
         // If is same category or category not picked
         if (marker.category == category || category.length === 0) {
-            marker.setVisible(true);
+            marker.setVisible(true);           
         }
         // Categories don't match 
         else {
@@ -127,7 +135,6 @@ filterMarkers = function (category) {
         }
     }
 }
-
 // Init map
 initialize();
 </script>
