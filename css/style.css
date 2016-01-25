@@ -368,3 +368,19 @@ nav.shrink .navbar-toggle {
     -o-background-size: cover;
     background-size: cover;
 }
+
+/* Text Box-------------------*/
+
+#mytext{
+  
+  font-weight: bold;
+  background-color: #82c600; 
+  border:1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.specificDealerDropdown{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
