@@ -371,16 +371,19 @@ nav.shrink .navbar-toggle {
 
 /* Text Box-------------------*/
 
-#mytext{
-  
-  font-weight: bold;
-  background-color: #82c600; 
-  border:1px solid black;
-  padding: 10px;
-  border-radius: 5px;
-}
-
 .specificDealerDropdown{
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+#list{
+  font-weight: bold;
+  background-color: ; 
+  border:20px solid #82c600;
+  padding: 10px;
+  margin-top: 80px;
+  border-radius: 2px;
+  width: 250px;
+  height: 400px;
+}
+

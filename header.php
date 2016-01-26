@@ -47,7 +47,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <a href="index.php" class="pull-left"><img src="photos/CDKLogo.png" id="logo" width="200" height="134"></a>
+            <a href="index.php" class="pull-left"><img src="photos/CDKLogo.png" id="logo" width="230" height="134"></a>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li>
