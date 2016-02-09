@@ -178,7 +178,6 @@ $(document).ready(function() {
 });
 </script>
 
-<!--Calendar-->
 
 
 </body>

@@ -191,16 +191,13 @@ nav.shrink .navbar-toggle {
 
 #homeimg{
   transition-duration: 4s;
+  position: relative;
 }
 
 .img-responsive { 
     /* other definitions */
     width:100%;
 }
-
-
-
-
 
 
 
@@ -296,9 +293,25 @@ nav.shrink .navbar-toggle {
   border-radius: 5px;
   background-color: #82c600;
 }
+
 .cdkimg{
   margin-top: 50px;
 }
+
+/*------------Add Dealership Form--------*/
+.form_add{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border:1px solid black;
+  border-radius: 5px;
+  background-color: #D3D3D3;
+  width:400px;
+}
+
+
 /*----------------------Cover Page--------------*/
 .site-wrapper {
   display: table;

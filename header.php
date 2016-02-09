@@ -33,7 +33,7 @@
 
   </head>
 
-  <body>
+  <body onload="load()">
     <!-- Fixed navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navba">
       <div class="container">
@@ -54,7 +54,7 @@
               <a href="index.php" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-home" id="homebtn"></i></a>
             </li>
             <li>
-              <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Contact Me</a>             
+              <a href="adddealership.php" role="button" aria-haspopup="true" aria-expanded="false">Add Dealership</a>             
             </li>
             <li>
               <a href="logout.php" role="button" aria-haspopup="true" aria-expanded="false">Logout</a>             

@@ -25,7 +25,8 @@
       <div id="map-canvas" class="center-block aboveMap"></div>      
     </div>
     <div class="col-md-3" id="list">
-        <h4 class="muted">Dealers will appear here</h4>
+        <p>Dealers Will Appear Here</p>
+        
     </div>
   </div><br><br>
 </div>
@@ -146,7 +147,7 @@ filterMarkers = function (category) {
     {
             //add content to list div
       
-            listDiv.innerHTML = listDiv.innerHTML + markerList[x][1] + "<br/>";
+            listDiv.innerHTML = listDiv.innerHTML + "-" + markerList[x][1] + "<br/>";
     }
 }
 // Init map
